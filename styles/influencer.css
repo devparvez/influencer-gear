@@ -102,6 +102,22 @@ nav li a{
     max-width: 95%;
     margin:20px auto;
 }
+/* card style */
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+   
+}
+.box{
+    padding:15px;
+    box-shadow: 10px 10px 5px #bebebe;
+    border-radius: 10px;
+}
+.card-photo img{
+    width: 100%;
+}
+
 /* for smaller device */
 @media screen and (max-width:576px) {
     nav{
