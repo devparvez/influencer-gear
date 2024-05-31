@@ -13,12 +13,15 @@ body {
 }
 
 /* nav styles */
+header{
+    margin:0 50px;
+}
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:50px 50px;
+    margin:50px 0px;
 }
 nav h2 a{
     text-decoration: none;
@@ -39,7 +42,67 @@ nav li a{
 .nav-content {
     display: flex;
 }
+/* banner styles */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:24px;
+}
 
+.banner-content{
+    width:calc(50% - 12px);
+    
+}
+.banner-photo{
+    width:50%;
+    text-align: center;
+    background-color: rgb(226, 225, 225);
+    border-radius: 50%;
+}
+.banner-photo img{
+    width:calc(50% - 12px);
+    text-align: center;
+    
+}
+.banner-content h2{
+    font-size:3.2rem;
+    font-weight: 800;
+    color:#3A3A3A;
+}
+.banner-content p{
+    color:#3A3A3A;
+    font-size: 1rem;
+    margin-bottom:15px;
+}
+.btn-primary{
+    padding:14px 24px;
+    border-radius: 16px;
+    border:none;
+    background-color: #E02C6D;
+    
+
+}
+.btn-primary a{
+    text-decoration: none;
+    color:#fff;
+}
+.btn-primary i{
+    color:#fff;
+    margin-left: 5px;
+}
+/* companies logo section style*/
+.partner-website-icon{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:50px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid gray;
+    border-top:2px solid gray;
+    max-width: 95%;
+    margin:20px auto;
+}
+/* for smaller device */
 @media screen and (max-width:576px) {
     nav{
         flex-direction: column;
@@ -47,5 +110,45 @@ nav li a{
     nav li a{
         font-weight: 400;
     }
+    .banner{
+        flex-direction: column-reverse;
+        gap:10px;
+
+    }
+    .banner-content{
+        width:100%;
+        
+    }
+    .banner-photo img{
+        width:100%;
+        text-align: center;
+        
+    }
     
+    .partner-website-icon{
+        flex-wrap: wrap;
+        align-items: center;
+        gap:20px;
+        padding:10px;
+       
+    }
+    
+    
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    /* nav{
+        flex-direction: column;
+    } */
+    .banner{
+        flex-direction: column-reverse;
+        gap:10px;
+
+    }
+    .partner-website-icon{
+        flex-wrap: wrap;
+        align-items: center;
+        gap:20px;
+        padding:10px;
+    }
 }
