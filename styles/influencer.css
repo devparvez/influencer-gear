@@ -103,6 +103,10 @@ nav li a{
     margin:20px auto;
 }
 /* card style */
+.card{
+    text-align: center;
+    margin:50px auto;
+}
 .card-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -116,6 +120,24 @@ nav li a{
 }
 .card-photo img{
     width: 100%;
+}
+.star-icon{
+    color:#ffe400;
+}
+.star-icon input{
+    display: none;
+}
+.star-icon input+label{
+    text-shadow: 1px 1px 0 #ffe400;
+    cursor: pointer;
+    font-size:1.2rem;
+}
+.star-icon input:checked + label ~ label{
+    color:#838383;
+}
+.star-icon label:active{
+    transform: scale(0.8);
+    transition: 0.3s ease;
 }
 
 /* for smaller device */
@@ -148,6 +170,19 @@ nav li a{
         padding:10px;
        
     }
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+    .card-photo img{
+        max-width: 50%;
+    }
+    .box{
+        padding:5px;
+    }
+    .box p{
+        font-size:15px;
+    }
+    
     
     
 }
